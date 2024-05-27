@@ -1,0 +1,161 @@
+/* max-width = tudo que for menor que */
+/* min-width = tudo que for maior que */
+
+@media (max-width:767px) /*1px menor que o tamanho "mesa digitalizadora" */
+{
+    body
+    {
+        gap: var(--Size20);
+    }
+    nav
+    {
+        gap: var(--Size50);
+        width: clamp(100%,80%,60%);
+    }
+    .chamativo
+    {
+        gap: var(--Size100);
+        height: 90vh;
+    }
+    .chamativo .texto
+    {
+        grid-area: 1 /span 2;
+        font-size: clamp(var(--Size50),var(--Size100),var(--Size150));
+    }
+    .chamativo img
+    {
+        grid-area: 2 /span 2;
+        width: clamp(15rem,18rem,20rem);
+    }
+    #proposito img
+    {
+        width: clamp(320px,480px,425px)
+    }
+    #proposito h2
+    {
+        font-size: var(--Size200);
+    }
+    #proposito p
+    {
+        width: clamp(290px,295px,300px);
+    }
+    .healthMatters
+    {
+        margin: var(--Size50);
+        gap: var(--Size50);
+    }
+    .healthMatters img
+    {
+        grid-area: 1 /span 2;
+        width: clamp(110px,245px,250px);
+    }
+    .healthMatters .texto
+    {
+        grid-area: 2 /span 2;
+        width: clamp(210px,285px,420px);
+    }
+    .image
+    {
+        width: 100%;
+        min-height: 420px;
+    }
+    #donations
+    {
+        gap: var(--Size150);
+        margin: var(--Size80);
+    }
+
+    #donations p
+    {
+        width: clamp(210px,285px,420px);
+        text-align: justify;
+    }
+    form
+    {
+        width: clamp(210px,285px,420px);
+    }
+}
+@media (min-width:1025px) /*1px maior que o tamanho "laptop" */
+{
+    header
+    {
+        font-size: var(--Size150);
+    }
+    .chamativo .texto
+    {
+        font-size: var(--Size200);
+    }
+    .chamativo img
+    {
+        width: clamp(20rem,15rem,20rem);
+    }
+    #proposito img
+    {
+        width: clamp(1024px,1340px,2150px);
+    }
+    #proposito p
+    {
+        width: clamp(1024px,690px,2560px);
+    }
+    #donations p
+    {
+        width: clamp(425px,768px,1024px);
+    }
+    form
+    {
+        width: clamp(425px,768px,1024px);
+    }
+}
+@media (min-width:2555px) /*5px menor que o tamanho "4k" */
+{
+    header
+    {
+        font-size: var(--Size250);
+    }
+    button
+    {
+        font-size: var(--Size200);
+    }
+    .chamativo .texto
+    {
+        font-size: var(--Size250);
+    }
+    .chamativo img
+    {
+        width: clamp(30rem,25rem,30rem);
+    }
+    #proposito img
+    {
+        width: clamp(1024px,1440px,2560px);
+    }
+    #proposito h3
+    {
+        font-size: var(--Size250);
+    }
+    #proposito p
+    {
+        font-size: var(--Size200);
+        width: clamp(1024px,1440px,2560px);
+    }
+    .healthMatters img
+    {
+        width: clamp(475px,768px,1024px);
+    }
+    .healthMatters .texto
+    {
+        font-size: var(--Size200);
+        width: clamp(475px,768px,1024px);
+    }
+    #donations
+    {
+        font-size: var(--Size200);
+    }
+    #donations p
+    {
+        width: clamp(475px,1440px,2550px);
+    }
+    form
+    {
+        width: clamp(475px,1440px,2550px);
+    }
+}

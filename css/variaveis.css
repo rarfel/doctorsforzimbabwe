@@ -1,0 +1,19 @@
+*
+{
+    /* colors */
+    --Black: black;
+    --PrimaryColor: white;
+    --SecondaryColor:rgb(236, 242, 247);
+
+    /* general sizes */
+    --Size10:.1rem;
+    --Size20:.2rem;
+    --Size50:.5rem;
+    --Size80:.8rem;
+    --Size100:1rem;
+    --Size150:1.5rem;
+    --Size200:2rem;
+    --Size250:2.5rem;
+    --Size300:3rem;
+    --Size350:3.5rem;
+}
