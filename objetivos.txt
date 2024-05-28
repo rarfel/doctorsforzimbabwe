@@ -1,7 +1,0 @@
-https://davicabecafranco.wixsite.com/meusite
-melhorar os quesios abaixo:
-melhora em questao de css/estilo da pag
-melhora no desing
-implementar sistema de doação
-implementar sistema de tradução
-implemntar mediaQuery
