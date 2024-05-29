@@ -46,12 +46,13 @@ body
 /* hover nas imagens */
 img
 {
-    transition: all 250ms ease-in-out;
+    transition: all 0.5s ease-out;
     box-shadow: var(--Black) 10px 10px;
 
 }
 .chamativo img:hover
 {
+    transition: all 0.5s ease-in-out;
     box-shadow: var(--Black) 20px 20px;
 }
 .healthMatters img:hover
@@ -75,16 +76,22 @@ button:hover
 /* navbar */
 header
 {
-    display: grid;
-    grid-template-columns:repeat(2,1fr);
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    /* background: red; */
+    /* display: grid;
+    grid-template-columns:repeat(2,1fr); */
 }
 nav
 {
     display: flex;
-    justify-content: end;
+    justify-content: space-around;
     align-items: center;
-    gap: var(--Size200);
-    width: clamp(100%,80%,60%);
+    /* background: blue; */
+    width: 400px;
+    /* gap: var(--Size200);
+    width: clamp(100%,80%,60%); */
 }
 .initial
 {
